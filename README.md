@@ -1,7 +1,7 @@
 
   # Portfolio Emi
 
-  This is a code bundle for Portfolio Emi. The original project is available at https://www.figma.com/design/sq46dNeYcqF79h3frN4LwU/Portfolio-Emi.
+  This is a Portfolio created by me.
 
   ## Running the code
 
