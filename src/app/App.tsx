@@ -235,18 +235,6 @@ const tools = [
 
 const certifications = [
   {
-    title: "Licenciatura en Marketing",
-    institution: "Instituto Universitario River Plate",
-    year: "2021",
-    type: "Grado",
-  },
-  {
-    title: "Licenciatura en Administración",
-    institution: "Instituto Universitario River Plate",
-    year: "2023",
-    type: "Grado",
-  },
-  {
     title: "Máster en Big Data y Business Intelligence",
     institution: "Escuela de Negocios Europea de Barcelona",
     year: "2025 - 2026",
@@ -257,6 +245,18 @@ const certifications = [
     institution: "Escuela de Negocios Europea de Barcelona",
     year: "2025 - 2026",
     type: "Máster",
+  },
+  {
+    title: "Licenciatura en Marketing",
+    institution: "Instituto Universitario River Plate",
+    year: "2021",
+    type: "Grado",
+  },
+  {
+    title: "Licenciatura en Administración",
+    institution: "Instituto Universitario River Plate",
+    year: "2023",
+    type: "Grado",
   },
   {
     title: "Power BI",
@@ -272,7 +272,7 @@ const certifications = [
   },
   {
     title: "Desarrollo Web Full Stack",
-    institution: "Codo a Codo",
+    institution: "Talento Tech - Gobierno Ciudad de Buenos Aires",
     year: "2024",
     type: "Curso",
   },
@@ -869,7 +869,8 @@ export default function App() {
       </section>
 
       {/* ── CERTIFICATIONS ──────────────────────────────────── */}
-      <section className="py-32 border-t border-border bg-muted/40">
+      <section className="py-32 border-t border-border bg-muted/40"        
+      id="certifications">
         <div className="max-w-6xl mx-auto px-6">
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
