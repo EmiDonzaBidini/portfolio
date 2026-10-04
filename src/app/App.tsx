@@ -196,7 +196,7 @@ const content = {
         "Conectando estrategia, negocio, datos y tecnología para generar crecimiento.",
       sub: "Experiencia en Demand Generation, Go-to-Market, Marketing Automation, expansión internacional y estrategia comercial para compañías B2B y tecnológicas.",
       ctaProjects: "Ver proyectos",
-      ctaCv: "Descargar CV",
+      ctaCv: "Ver CV",
       ctaContact: "Escribime",
       stats: [
         { num: "331%", label: "crecimiento de ventas" },
@@ -514,7 +514,7 @@ const content = {
         "Connecting strategy, business, data and technology to drive growth.",
       sub: "Experience in Demand Generation, Go-to-Market, international expansion, events and commercial strategy for B2B companies.",
       ctaProjects: "View projects",
-      ctaCv: "Download CV",
+      ctaCv: "View CV",
       ctaContact: "Get in touch",
       stats: [
         { num: "331%", label: "sales growth in 2023" },
@@ -797,7 +797,7 @@ const content = {
       location:
         "Buenos Aires, Argentina · Open to remote / hybrid / relocation",
       mail: "Send me an email",
-      cv: "Download CV",
+      cv: "View CV",
     },
     footer: "Portfolio designed and developed by Emilia Donza Bidini",
   },
@@ -1041,10 +1041,7 @@ export default function App() {
                   transition={{ duration: 0.7, delay: 0.4 }}
                   className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed mb-3"
                 >
-                  <span className="text-foreground font-semibold">
-                    {t.hero.headline}
-                  </span>{" "}
-                  {t.hero.headlineRest}
+                {t.hero.headlineRest}
                 </motion.p>
 
                 <motion.p
@@ -1089,10 +1086,12 @@ export default function App() {
                   </a>
                   <a
                     href={CV_FILES[lang]}
-                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 border border-border text-foreground text-sm font-medium px-5 py-2.5 rounded-full hover:bg-muted transition-colors"
                   >
-                    <Download size={14} /> {t.hero.ctaCv}
+                    <ArrowUpRight size={14} />
+                    {t.hero.ctaCv}
                   </a>
                   <a
                     href="#contact"
@@ -1645,15 +1644,16 @@ export default function App() {
                 </a>
                 <a
                   href={CV_FILES[lang]}
-                  download
-                  className="inline-flex items-center gap-2 text-sm font-medium px-6 py-3 rounded-full transition-colors hover:bg-white/10"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full transition-colors hover:bg-white/10"
                   style={{
-                    color: "rgba(255,255,255,0.8)",
-                    border: "1px solid rgba(255,255,255,0.2)",
+                    color: "#FFFFFF",
+                    border: "1px solid rgba(255,255,255,0.35)",
                   }}
                 >
-                  <Download size={14} />
-                  {t.contact.cv}
+                  <ArrowUpRight size={14} />
+                  {t.hero.ctaCv}
                 </a>
                 <a
                   href="https://www.linkedin.com/in/emiliadonzabidini"
